@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wable Infinity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> <!-- Added Montserrat -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Wable Infinity Logo" class="logo">
+            <div class="brand-name" id="animated-text"></div> <!-- Changed to div for animation -->
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="project.html">Project</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html" class="contact-btn">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="images/bungalow1.jpg" alt="Bungalow 1"></div>
+                <div class="slide"><img src="images/bungalow2.jpg" alt="Bungalow 2"></div>
+                <div class="slide"><img src="images/bungalow3.jpg" alt="Bungalow 3"></div>
+                <div class="slide"><img src="images/bungalow4.jpg" alt="Bungalow 4"></div>
+                <div class="slide"><img src="images/bungalow5.jpg" alt="Bungalow 5"></div>
+                <div class="slide"><img src="images/bungalow6.jpg" alt="Bungalow 6"></div>
+                <div class="slide"><img src="images/bungalow7.jpg" alt="Bungalow 7"></div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="animated-text">About Wable Infinity</h1>
+            <p class="animated-text">Building the Future of Luxury Living with ELYSIA.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-text">
+                <h2>Our Vision</h2>
+                <p>Wable Infinity is dedicated to redefining luxury living through innovative design and unparalleled quality. With the ELYSIA project, we aim to create a sanctuary of elegance and comfort for those who seek the finest in life.</p>
+                <p>Our team of experts brings together years of experience in architecture, design, and construction to deliver homes that are not just spaces, but experiences.</p>
+                <a href="contact.html" class="content-btn">Get in Touch</a>
+            </div>
+            <div class="content-image">
+                <img src="images/bungalow1.jpg" alt="About Wable Infinity">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Wable Infinity</h3>
+                <p>Wable Infinity is dedicated to redefining luxury living through innovative design and unparalleled quality.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/wableinfinity"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/wableinfinity"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Phone: +91 9595 00 7707</p>
+                <p>Phone: +91 7385 53 6117</p>
+                <p>Email: info@wableinfinity.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="project.html">ELYSIA Project</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Wable Infinity. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

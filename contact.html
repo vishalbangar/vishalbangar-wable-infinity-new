@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wable Infinity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> <!-- Added Montserrat -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Wable Infinity Logo" class="logo">
+            <div class="brand-name" id="animated-text"></div> <!-- Changed to div for animation -->
+        </div>
+        <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="project.html">Project</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html" class="contact-btn">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="images/bungalow1.jpg" alt="Bungalow 1"></div>
+                <div class="slide"><img src="images/bungalow2.jpg" alt="Bungalow 2"></div>
+                <div class="slide"><img src="images/bungalow3.jpg" alt="Bungalow 3"></div>
+                <div class="slide"><img src="images/bungalow4.jpg" alt="Bungalow 4"></div>
+                <div class="slide"><img src="images/bungalow5.jpg" alt="Bungalow 5"></div>
+                <div class="slide"><img src="images/bungalow6.jpg" alt="Bungalow 6"></div>
+                <div class="slide"><img src="images/bungalow7.jpg" alt="Bungalow 7"></div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="animated-text">Contact Us</h1>
+            <p class="animated-text">Get in touch with Wable Infinity for inquiries about ELYSIA Luxury Bungalows.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section with Google Map -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Send Us a Message</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/your-form-id" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3777.868610209866!2d73.517342!3d18.759404999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQ1JzMzLjkiTiA3M8KwMzEnMDIuNCJF!5e0!3m2!1sen!2sin!4v1744629348538!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Wable Infinity</h3>
+                <p>Wable Infinity is dedicated to redefining luxury living through innovative design and unparalleled quality.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/wableinfinity"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/wableinfinity"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Phone: +91 9595 00 7707</p>
+                <p>Phone: +91 7385 53 6117</p>
+                <p>Email: info@wableinfinity.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="project.html">ELYSIA Project</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Wable Infinity. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
